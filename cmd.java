@@ -30,7 +30,11 @@ public class cmd
 		}// If -a
 		if(args[0].equals("-i"))
 		{
-			System.out.println(args[1]+1);
+			for(int i = 1; i < args.length; i++)
+			{
+			int num = Integer.parseInt(args[i]);
+			System.out.println(num+1);
+			}
 		}
                 if(args[0].equals("-h"))
                 {
